@@ -17,7 +17,7 @@ public class CardDeliveryOrderForm {
     }
 
     @Test
-    public void formACardTest() {
+    public void formAcceptedSuccessfully() {
         Selenide.open("http://localhost:9999");
         $("[data-test-id='city'] input").setValue("Санкт-Петербург");
         String plannerDate = generateDate(4, "dd.MM.yyyy");
